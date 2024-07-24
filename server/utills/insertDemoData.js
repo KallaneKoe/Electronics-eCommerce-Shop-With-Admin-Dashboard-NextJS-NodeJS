@@ -146,9 +146,8 @@ const demoProducts = [
     manufacturer: "Gillete",
     categoryId: "313eee86-bc11-4dc1-8cb0-6b2c2a2a1ccb",
     inStock: 0,
-  }
+  },
 ];
-
 
 const demoCategories = [
   {
@@ -201,27 +200,26 @@ const demoCategories = [
   },
   {
     id: "da6413b4-22fd-4fbb-9741-d77580dfdcd5",
-    name: "mouses"
+    name: "mouses",
   },
   {
     id: "ss6412b4-22fd-4fbb-9741-d77580dfdcd2",
-    name: "computers"
+    name: "computers",
   },
   {
     id: "fs6412b4-22fd-4fbb-9741-d77512dfdfa3",
-    name: "printers"
-  }
+    name: "printers",
+  },
 ];
 
 async function insertDemoData() {
-  
   for (const category of demoCategories) {
     await prisma.category.create({
       data: category,
     });
   }
   console.log("Demo categories inserted successfully!");
-  
+
   for (const product of demoProducts) {
     await prisma.product.create({
       data: product,
