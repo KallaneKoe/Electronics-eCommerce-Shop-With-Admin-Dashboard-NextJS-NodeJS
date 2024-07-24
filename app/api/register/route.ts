@@ -1,3 +1,5 @@
+"use client";
+
 import prisma from "@/utils/db";
 import bcrypt from "bcryptjs";
 import { nanoid } from "nanoid";
