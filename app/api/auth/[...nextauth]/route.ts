@@ -1,3 +1,5 @@
+"use client";
+
 import { authOptions } from "@/server/utills/authOptions";
 import NextAuth from "next-auth";
 
